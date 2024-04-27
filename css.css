@@ -1,0 +1,83 @@
+.container{
+    min-height: 250px;
+    width: 500px;
+    margin: auto;
+    overflow: auto;/* 阻止h1 margin改變去造成container也位移 */
+    background-color: rgb(102, 66, 71);
+    border-radius: 15px;
+  }
+  *{
+    font-family: "Lilita One", sans-serif;
+    padding: 0;
+  }
+  
+  h1{
+    margin: 1rem auto 1rem ;
+    text-align: center;
+    font-size: 3em;
+    text-decoration: underline solid ;
+    color: rgb(193, 128, 134);
+  }
+  .add{
+    text-align: center;
+    height: 3rem;
+    margin: 3rem 3rem 1rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #inputbox{
+    border-radius: 10px;
+    margin: 0 5%;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    width: 40rem;
+  }
+  
+  #addbutton{
+    width: 6rem;
+    font-size: 1rem;
+    color: rgb(92, 23, 23);
+    border-radius:10px;
+  }
+  .form{
+    display:flex;
+    flex-direction:column;
+  }
+  .list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0 2rem;
+  }
+  .check{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+  }
+  h2{
+    font-size: 1.2rem;
+    color: rgb(215, 193, 196);
+    font-family:"Poppins", "Lilita One", sans-serif;
+    font-weight:400;
+  }
+  button{
+    margin-left: auto;
+    margin-right: 1rem;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius:0.5rem;
+  }
+  .check:checked+h2{
+      text-decoration: line-through brown 3px;
+  }
+  @media screen and (max-width:500px) {
+    .container{
+      width:100vw
+    }
+    #addbutton{
+      margin-right:1px;
+    }
+    .list button{
+      margin-right:1px;
+    }
+  }
